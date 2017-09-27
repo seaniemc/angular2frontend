@@ -14,7 +14,7 @@ export class LoginService{
         return this.http.post(tokenUrl1, JSON.stringify(model), {headers: headers1});
     }
 
-    sendtoken(token){
+    sendToken(token){
         let tokenUrl2 = "http://localhost:8080/rest/user/users";
         console.log('Bearer '+token);
 
@@ -30,11 +30,12 @@ export class LoginService{
     checkLogin(){
         if(localStorage.getItem("currentUserName")!= null && localStorage.getItem("currentUserName")!=' '
         && localStorage.getItem("token")!=null && localStorage.getItem("token")!='') {
-      console.log(localStorage.getItem("currentUserName"));
-      console.log(localStorage.getItem("token"));
-      return true;
-    } else {
-      return false;
-    })
+            console.log(localStorage.getItem("currentUserName"));
+            console.log(localStorage.getItem("token"));
+            return true;
+        } else {
+            return false;
+    
+        }
     }
 }

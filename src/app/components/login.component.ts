@@ -16,10 +16,10 @@ export class Login {
     }
 
     onSubmit(){
-        this.loginService.sendCredential(this.model).subcribe(
+        this.loginService.sendCredential(this.model).subscribe(
             data =>{
                 localStorage.setItem("token", JSON.parse(JSON.stringify(data)).body);
-                this.loginService.sendToken(localStorage.getItem("token")).subcribe(
+                this.loginService.sendToken(localStorage.getItem("token")).subscribe(
                     data => {
                         this.currentUserName=this.model.username;
                         localStorage.setItem("currentUserName", this.model.username);
