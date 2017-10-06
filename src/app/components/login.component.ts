@@ -15,21 +15,22 @@ export class Login {
         this.currentUserName=localStorage.getItem("currentUserName");
     }
 
-    onSubmit(){
+    onSubmit() {
         this.loginService.sendCredential(this.model).subscribe(
-            data =>{
-                localStorage.setItem("token", JSON.parse(JSON.stringify(data)).body);
-                this.loginService.sendToken(localStorage.getItem("token")).subscribe(
-                    data => {
-                        this.currentUserName=this.model.username;
-                        localStorage.setItem("currentUserName", this.model.username);
-                        this.model.username=' ';
-                        this.model.password=' ';
+            data => {
+                        localStorage.setItem("token", JSON.parse(JSON.stringify(data))._body);
+                        this.loginService.sendToken(localStorage.getItem("token")).subscribe(
+                        data => {
+                                    this.currentUserName=this.model.username;
+                                    localStorage.setItem("currentUserName", this.model.username);
+                                    this.model.username='';
+                                    this.model.password='';
+                                },
+                        error => console.log(error)
+                        );
                     },
-                    error => console.log(error)
-                );
-            },
-            error => console.log(error)
+        error => console.log(error)
         );
+
     }
 }
