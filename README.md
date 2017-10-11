@@ -1,7 +1,7 @@
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
-The application was further developed, to created a photo displaying website where members can display images and like, dislike photos shared by other members. 
+The application was further developed, to created a photo displaying website where members can display images, like and dislike photos shared by other members. 
 
 ### What is needed to run the full application
 
