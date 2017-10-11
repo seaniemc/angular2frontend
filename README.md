@@ -3,8 +3,6 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 The application was further developed, to created a photo displaying website where members can display images and like, dislike photos shared by other members. 
 
-When making this application I followed a tutorial from [Udemy](https://www.udemy.com/build-a-web-app-with-spring-boot-and-angular-2/learn/v4/overview)
-
 ### What is needed to run the full application
 
 This web app is the front end of a full stack application. The corresponding back-end code can be found at the ***[springBootBackend](https://github.com/seaniemc/springBootBackend)*** repo on my profile. 
@@ -21,3 +19,5 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+### Resources
+When making this application I followed this tutorial from [Udemy](https://www.udemy.com/build-a-web-app-with-spring-boot-and-angular-2/learn/v4/overview)
