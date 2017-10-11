@@ -5,11 +5,11 @@ The application was further developed, to created a photo displaying website whe
 
 When making this application I followed a tutorial from [Udemy](https://www.udemy.com/build-a-web-app-with-spring-boot-and-angular-2/learn/v4/overview)
 
-### Whats need to run full application
+### What is needed to run the full application
 
 This web app is the front end of a full stack application. The corresponding back-end code can be found at the ***[springBootBackend](https://github.com/seaniemc/springBootBackend)*** repo on my profile. 
 
-### Development server
+### Run front-end server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
